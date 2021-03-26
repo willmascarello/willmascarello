@@ -1,0 +1,12 @@
+/* visible only in the page Home or Index */
+
+.container {
+  color: var(--title);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+

@@ -1,0 +1,25 @@
+/* visible only in the component ComponentToUse */
+
+.container button{
+  background: var(--white);
+  transition: linear 0.2s;
+  padding: 1rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+
+  width: 10rem;
+}
+
+.container button:hover {
+  /* filter: brightness(1.1); */
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.1));
+}
+
+.btn__active {
+  border: 2px solid var(--green);
+  color: var(--green);
+}
+
+.btn__notActive {
+  border: 2px solid var(--red);
+  color: var(--red);
+}
