@@ -1,15 +1,19 @@
-// Componens are reaproveitables in any parts of the App
-
 import { useContext } from "react";
 import { NameContext } from "../context/NameContext";
+// import VideoBackground from "video/Mountains.mp4"
 
-import styles from "../styles/components/Home.module.css"
+import styles from "../styles/pages/Home.module.css"
 
-export function Home() {
+export function HomePage() {
     const {isActive, functionActive} = useContext(NameContext); 
 
     return (
         <div className={styles.container}>
+            {/* https://www.youtube.com/watch?v=PYFltdGJ-Rc 
+            https://www.youtube.com/watch?v=I2UBjN5ER4s*/}
+            <video autoPlay loop muted className={styles.videoBackground}>
+                <source src="video/Mountains.mp4" type="video/mp4" />
+            </video>
             <h2>Olá,</h2>
             <h1>Sou o William Mascarello</h1>
             <h2>Bem vindo ao Meu Universo em constante evolução</h2>

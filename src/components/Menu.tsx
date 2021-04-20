@@ -1,5 +1,3 @@
-// Componens are reaproveitables in any parts of the App
-
 import { useContext } from "react";
 import { NameContext } from "../context/NameContext";
 

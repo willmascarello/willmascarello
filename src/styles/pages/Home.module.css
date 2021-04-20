@@ -1,5 +1,3 @@
-/* visible only in the page Home or Index */
-
 .container {
   color: var(--title);
   
@@ -8,5 +6,18 @@
   align-items: center;
   align-content: center;
   text-align: center;
+}
+
+.videoBackground {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 25%;
+  /* https://www.youtube.com/watch?v=PYFltdGJ-Rc */
 }
 

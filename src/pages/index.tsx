@@ -3,9 +3,9 @@ import Head from 'next/head'
 import { GetServerSideProps } from 'next'
 
 import { Menu } from "../components/Menu";
+import { HomePage } from "../components/Home";
 import { NameGeralProvider } from "../context/NameGeralContext";
 
-import styles from "../styles/pages/Home.module.css"
 import { NameProvider } from "../context/NameContext";
 // This is the main and start page of the App
 
@@ -23,7 +23,7 @@ export default function Home(props) {
     isActive={props.isActive}
     >
 
-      <div className={styles.container}>
+      <div>
         
         <Head>
           <title>Will Mascarello | Creative Developer</title>
@@ -31,7 +31,7 @@ export default function Home(props) {
         
         <NameProvider>
           <Menu />
-          <Home />
+          <HomePage />
         </NameProvider>
 
 
