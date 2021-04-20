@@ -2,7 +2,7 @@ import React from "react";
 import Head from 'next/head'
 import { GetServerSideProps } from 'next'
 
-import { ComponentToUse } from "../components/ComponentToUse";
+import { Menu } from "../components/Menu";
 import { NameGeralProvider } from "../context/NameGeralContext";
 
 import styles from "../styles/pages/Home.module.css"
@@ -26,14 +26,12 @@ export default function Home(props) {
       <div className={styles.container}>
         
         <Head>
-          <title>Home | Base</title>
+          <title>Will Mascarello | Creative Developer</title>
         </Head>
         
         <NameProvider>
-          <div className={styles.container}>
-            <h1>This is the Home Page</h1>
-            <ComponentToUse />
-          </div>
+          <Menu />
+          <Home />
         </NameProvider>
 
 

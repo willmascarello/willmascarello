@@ -1,20 +1,16 @@
 /* CSS Variable */
 :root {
+    --primary: #000020;
+    --primary-75: #00002075;
+    --primary-50: #00002050;
+    --secundary: #F8F8F8;
+    --secundary-60: #F8F8F8;
+    --secundary-30: #F8F8F8;
+    --accent: #FFF500;
+    --accent-50: #FFF50050;
     --white: #fff;
-    --background: #f2f3f5;
-    --gray-line: #dcdde0;
-    --text: #666666;
-    --text-highlight: #b3b9ff;
-    --title: #2e384d;
-    --red: #e83f5b;
-    --green: #4cd62b;
-    --blue: #5965e0;
-    --blue-dark: #4953b8;
-    --blue-twitter: #2aa9e0;
   }
 
-
-/* Media Queries - The minor width subscribe the great width valor, when have the equal style or add new style and behavior */
 
 /* Under 1080px of width respect this. Have priority under the large width */
 @media(max-width: 1080px){
@@ -34,12 +30,12 @@
 /* Styles important in all pages */
 
 body {
-    background:  var(--background);
-    color: var(--text);
+    background:  var(--primary);
+    color: var(--secundary);
 }
 
 body, input, textarea, button {
-    font: 400 1rem "Roboto", sans-serif;
+    font: 200 1rem "Open Sans", sans-serif;
 }
 
 button {
@@ -51,9 +47,20 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    font-family: Stoke;
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: Stoke;
+    font-weight: 200;
+    font-size: 1.75rem;
+}
+
 .container {
     height: 100vh;
-    max-width: 992;
     margin: 0 auto;
     padding: 2.5rem 2rem;
     display: flex;

@@ -1,4 +1,8 @@
-/* visible only in the component ComponentToUse */
+/* visible only in the component Menu */
+
+.menu {
+  color: var(--secundary);
+}
 
 .container button{
   background: var(--white);
