@@ -11,6 +11,9 @@
     --white: #fff;
   }
 
+  * {   
+    transition: all .3s ease-in-out;
+  }
 
 /* Under 1080px of width respect this. Have priority under the large width */
 @media(max-width: 1080px){
