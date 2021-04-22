@@ -19,6 +19,10 @@
   opacity: 70%;
 }
 
+.logo button {
+  color: transparent;
+}
+
 .logo:hover {
   opacity: 100%;
   transform: rotate(180deg);
