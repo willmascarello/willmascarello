@@ -9,7 +9,7 @@ export function Menu() {
 
     return (
         <div className={styles.menu}>
-            <a href="#" ><img className={styles.logo} src="logo.png" alt="Will Mascarello Logo" /></a>
+            <a href="#" ><img width="64px" height="55px" className={styles.logo} src="logo.png" alt="Will Mascarello Logo" /></a>
 
 
             {/* <a href="" target="blank" className={styles.blog}><IconBlog /></a> // precisa instalar o webpack SVGR */}
