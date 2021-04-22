@@ -68,7 +68,12 @@
   height: auto;
 }
 
-
+.player {
+  width: 2rem;
+  height: auto;
+  background: transparent;
+  border: none;
+}
 
 
 
