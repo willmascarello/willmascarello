@@ -1,0 +1,136 @@
+.bars {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-1rem, 2rem);
+}
+
+.dots {
+  display: flex;
+  margin-left: 1rem;
+}
+
+.dots div {
+  position: absolute;
+  bottom: 0;
+  margin-left: .1rem;
+  background: #F8F8F8;
+  height: .2rem;
+  width: .2rem;
+  border-radius: .1rem;
+  opacity: 60%;
+}
+
+/* linha */
+/* .dots::after {
+  content: '';
+  position: absolute;
+  bottom:-2.5rem;
+  left:0;
+  width: 16px;
+  height: .1rem;
+} */
+
+@keyframes dotAnimate {
+  0% {
+    opacity: .1;
+    height: 0rem; 
+  }
+  100% {
+    opacity: .5;
+    height: 1.5rem;       
+  }
+}
+
+.dot__1 {
+  animation: dotAnimate .5s ease-in infinite alternate;
+  animation-delay: .1s;
+  left: 0;
+}
+.dot__2 {
+  animation: dotAnimate .8s ease-in infinite alternate;
+  animation-delay: .2s;
+  left: .3rem;
+}
+.dot__3 {
+  animation: dotAnimate .6s ease-in infinite alternate;
+  animation-delay: .3s;
+  left: .6rem;
+}
+.dot__4 {
+  animation: dotAnimate .5s ease-in infinite alternate;
+  animation-delay: .4s;
+  left: .9rem;
+}
+.dot__5 {
+  animation: dotAnimate .7s ease-in infinite alternate;
+  animation-delay: .5s;
+  left: 1.2rem;
+}
+.dot__6 {
+  animation: dotAnimate .6s ease-in infinite alternate;
+  animation-delay: .6s;
+  left: 1.5rem;
+}
+
+
+/* Reverse */
+
+
+.dot__1r {
+  animation: dotAnimate .5s ease-in infinite alternate;
+  animation-delay: .2s;
+  left: 0;
+}
+.dot__2r {
+  animation: dotAnimate .8s ease-in infinite alternate;
+  animation-delay: .2s;
+  left: .3rem;
+}
+.dot__3r {
+  animation: dotAnimate .6s ease-in infinite alternate;
+  animation-delay: .2s;
+  left: .6rem;
+}
+.dot__4r {
+  animation: dotAnimate .5s ease-in infinite alternate;
+  animation-delay: .2s;
+  left: .9rem;
+}
+.dot__5r {
+  animation: dotAnimate .6s ease-in infinite alternate;
+  animation-delay: .2s;
+  left: 1.2rem;
+}
+.dot__6r {
+  animation: dotAnimate .5s ease-in infinite alternate;
+  animation-delay: .2s;
+  left: 1.5rem;
+}
+
+
+.dot__1p {
+  left: 0;
+}
+.dot__2p {
+  left: .3rem;
+}
+.dot__3p {
+  left: .6rem;
+}
+.dot__4p {
+  left: .9rem;
+}
+.dot__5p {
+  left: 1.2rem;
+}
+.dot__6p {
+  left: 1.5rem;
+}
+
+.play__icon {
+  position: absolute;
+  top: -2rem;
+  left: 0;
+  transform: translateX(.5rem);
+}
