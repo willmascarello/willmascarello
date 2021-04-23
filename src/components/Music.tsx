@@ -29,17 +29,17 @@ const useAudio = url => {
 
   }, []);
 
-  return [playing, toggle];
+  return (
+    <div>
+        <button style={{'width': '2rem', 'height': 'auto', 'background': 'transparent', 'border': 'none', 'fill':'#F8F8F70' }} onClick={toggle}>{playing ? iconPause : iconPlay}</button>
+    </div>
+  )
 };
 
 const Player = ({ url }) => {
-  const [playing, toggle] = useAudio(url);
+  const button = useAudio(url);
 
-  return (
-    <div>
-      <button style={{'width': '2rem', 'height': 'auto', 'background': 'transparent', 'border': 'none', 'fill':'#F8F8F70' }} onClick={toggle}>{playing ? iconPause : iconPlay}</button>
-    </div>
-  );
+  return button;
 };
 
 
