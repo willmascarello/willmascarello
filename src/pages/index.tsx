@@ -36,6 +36,7 @@ export default function Home(props) {
           <meta name="robots" content="index" />
           <meta name="viewport" content="width=device-width,initial-scale=1.0" />
           <meta name="theme-color" content="#000020" />
+          <meta name="dark-mode" content="#000020" />
 
           <meta property="og:type" content="website" />
           <meta property="og:title" content={title} />

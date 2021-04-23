@@ -23,6 +23,7 @@
   margin-left: clamp(1rem, 1rem + 3vw, 5rem);
   margin-right: clamp(2rem, 4rem + 3vw, 10rem);
   text-align: left;
+  width: fit-content;
 }
 
 .title h1 {
