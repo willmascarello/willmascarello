@@ -52,6 +52,8 @@ export default function Home(props) {
           <meta name="twitter:site" content="@will_mascarello" />
           <meta name="twitter:creator" content="@will_mascarello"  key="twhandle" />
           <meta name="twitter:card" content="summary_large_image" key="twcard" />
+          
+          <meta name="fb:app_id" content="768199120565235" />
 
         </Head>
         
