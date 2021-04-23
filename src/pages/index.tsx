@@ -19,7 +19,7 @@ export default function Home(props) {
 
   let title = 'Will Mascarello | Creative Developer';
   let description = 'Olá, sou o William Mascarello. Um desenvolvedor criativo, criando conteúdos e experiências digitais! Conheça um pouco sobre mim :)';
-  let img = "og_image_min.jpg";
+  let img = "https://willmascarello.com/og_image_min.jpg";
 
   return (
     
@@ -41,14 +41,14 @@ export default function Home(props) {
           <meta property="og:type" content="website" />
           <meta property="og:title" content={title} />
           <meta property="og:url" content="https://willmascarello.com"  key="ogurl" />
-          <meta property="og:image" content="og_image_min.jpg" key="ogimage" />
+          <meta property="og:image" content="https://willmascarello.com/og_image_min.jpg" key="ogimage" />
           <meta property="og:site_name" content={title}/>
           <meta property="og:description" content={description} key="ogdesc" />
           <meta property="og:site_name" content={title} key="ogsitename"  />
 
           <meta name="twitter:title" content={title} />
           <meta name="twitter:description" content={description} />
-          <meta name="twitter:image" content="og_image_min.jpg" />
+          <meta name="twitter:image" content="https://willmascarello.com/og_image_min.jpg" />
           <meta name="twitter:site" content="@will_mascarello" />
           <meta name="twitter:creator" content="@will_mascarello"  key="twhandle" />
           <meta name="twitter:card" content={description} key="twcard" />
