@@ -30,8 +30,8 @@
 
 
 .blog {
-  fill: var(--accent);
-  color: var(--accent);
+  fill: var(--secundary-30);
+  color: var(--secundary-30);
   width: 2.5rem;
   height: auto;
   opacity: 0% /*50%*/;
@@ -44,7 +44,7 @@
 }
 
 .blog:hover {
-  opacity: 100%;
+  opacity: 75%;
 } 
 
 .menu__icon {
