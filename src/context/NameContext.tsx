@@ -34,12 +34,12 @@ export function NameProvider({children}: NameProviderProps) {
 
   }
 
-  useEffect(() => {
+  // useEffect(() => {
 
-    console.log('isActive was change')
-    consoleAlert();
+  //   console.log('isActive was change')
+  //   consoleAlert();
 
-  }, [isActive])
+  // }, [isActive])
 
 
   return (

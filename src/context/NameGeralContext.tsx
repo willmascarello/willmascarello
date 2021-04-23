@@ -20,9 +20,9 @@ export function NameGeralProvider({children, ...rest}: NameGeralProviderProps) {
   const [isActive, setIsActive] = useState(rest.isActive ?? false);
 
   
-  function consoleAlert(){
-    console.log('This is a Alert from NameGeralContext');
-  }
+  // function consoleAlert(){
+  //   console.log('This is a Alert from NameGeralContext');
+  // }
 
 
   return (
