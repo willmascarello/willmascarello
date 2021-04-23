@@ -3,7 +3,6 @@ import {createContext, useState, ReactNode} from 'react';
 interface NameGeralContextData {
   variable: number;
   isActive: boolean;
-  consoleAlert : () => void;
 }
 
 interface NameGeralProviderProps {
@@ -27,7 +26,7 @@ export function NameGeralProvider({children, ...rest}: NameGeralProviderProps) {
 
   return (
     <NameGeralContext.Provider 
-        value={{variable, isActive, consoleAlert}}>
+        value={{variable, isActive}}>
           {children}
     </NameGeralContext.Provider>
   );
