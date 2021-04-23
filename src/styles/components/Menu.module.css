@@ -21,6 +21,7 @@
   height: auto;
   margin-bottom: 2rem;
   opacity: 70%;
+  transition: all .3s ease-in-out;
 }
 
 .logo button {
@@ -40,6 +41,7 @@
   height: auto;
   opacity: 0% /*50%*/;
   text-align: center;
+  transition: all .3s ease-in-out;
 }
 
 .blog p {
@@ -63,6 +65,7 @@
   fill: var(--secundary);
   color: var(--secundary);
   opacity: 50%;
+  transition: all .3s ease-in-out;
 }
 .menu__icon a:hover {
   opacity: 100%;

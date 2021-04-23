@@ -11,10 +11,6 @@
     --white: #fff;
   }
 
-  * {   
-    transition: all .3s ease-in-out;
-  }
-
   ::-moz-selection { /* Code for Firefox */
     color: var(--primary);
     background: var(--secundary-30);
