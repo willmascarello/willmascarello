@@ -16,7 +16,7 @@ export const NameContext = createContext({} as NameContextData);
 export function NameProvider({children}: NameProviderProps) {
 
   
-  const {consoleAlert} = useContext(NameGeralContext);
+  // const {consoleAlert} = useContext(NameGeralContext);
 
   const variable = 1;
   const [isActive, setIsActive] = useState(false);
