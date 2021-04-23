@@ -59,7 +59,7 @@ const useAudio = url => {
 
   return (
     <div>
-        <button style={{'position' : 'relative','width': '2rem', 'height': '2rem', 'background': 'transparent', 'border': 'none', 'fill':'#F8F8F70' }} onClick={toggle}>{playing ? iconPause : iconPlay}</button>
+        <button aria-label='play pause button' style={{'position' : 'relative','width': '2rem', 'height': '2rem', 'background': 'transparent', 'border': 'none', 'fill':'#F8F8F70' }} onClick={toggle}>{playing ? iconPause : iconPlay}</button>
     </div>
   )
 };
