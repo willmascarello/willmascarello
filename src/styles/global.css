@@ -11,6 +11,16 @@
     --white: #fff;
   }
 
+  @font-face {
+     font-family: "Stoke";
+     src: local(Raleway), url(../../public/fonts/Stoke/Stoke-Regular.ttf);
+  }
+
+  @font-face {
+     font-family: "Open Sans";
+     src: local(Raleway), url(../../public/fonts/Open_Sans/OpenSans-Regular.ttf);
+  }
+
   ::-moz-selection { /* Code for Firefox */
     color: var(--primary);
     background: var(--secundary-30);
