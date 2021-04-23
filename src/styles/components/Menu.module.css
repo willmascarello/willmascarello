@@ -10,6 +10,12 @@
   padding: 1rem 0;
 }
 
+@media(max-width: 720px){
+  .menu {
+    height: 84vh;
+  }
+}
+
 .logo {
   width: 4rem;
   height: auto;
