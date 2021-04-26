@@ -47,13 +47,11 @@ const useAudio = url => {
   useEffect(() => {
 
     if (playing) {
-      console.log("playing: " + playing);
 
       audio.play();
       let fadein = setInterval(
         function() {
           if (vol < 1) {
-            console.info("vol +: " + vol);
             audio.volume=vol;
             vol += 0.1;
           }
@@ -67,12 +65,10 @@ const useAudio = url => {
       let fadeout = setInterval(
         function() {
           if (vol > 0) {
-            console.info("vol -: " + vol);
             audio.volume=vol;
             vol -= 0.01;
           }
           else {
-            console.log("playing: " + playing);
             audio.pause();
             clearInterval(fadeout);
           }
