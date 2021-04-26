@@ -134,3 +134,12 @@
   left: 0;
   transform: translateX(.5rem);
 }
+
+.buttonPlay {
+  position: relative;
+  width: 3rem;
+  height: 5rem;
+  padding-top: 2rem;
+  background: transparent;
+  border: none 
+}

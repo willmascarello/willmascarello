@@ -35,31 +35,75 @@ const iconPlay = <div className={styles.bars}>
 const useAudio = url => {
   // let sound = new Audio(url);
   const [audio] = useState(typeof Audio !== "undefined" && new Audio(url));
-  const [playing, setPlaying] = useState(false);
+  const [playing, setPlaying] = useState(true);
 
-  const toggle = () => setPlaying(!playing);
+  let vol = 0.1;
+  const interval = 60;
+
+  const toggle = () => {
+    setPlaying(!playing)
+  }
 
   useEffect(() => {
-      playing ? audio.play() : audio.pause();
-    },
+
+    if (playing) {
+      console.log("playing: " + playing);
+
+      audio.play();
+      let fadein = setInterval(
+        function() {
+          if (vol < 1) {
+            console.info("vol +: " + vol);
+            audio.volume=vol;
+            vol += 0.1;
+          }
+          else {
+            clearInterval(fadein);
+          }
+        }, interval);
+      
+    } else {
+
+      let fadeout = setInterval(
+        function() {
+          if (vol > 0) {
+            console.info("vol -: " + vol);
+            audio.volume=vol;
+            vol -= 0.01;
+          }
+          else {
+            console.log("playing: " + playing);
+            audio.pause();
+            clearInterval(fadeout);
+          }
+        }, interval);
+
+    }
+    }
+    ,
     [playing]
   );
 
   useEffect(() => {
-    setPlaying(true);
 
     audio.addEventListener('ended', () => audio.play());
+    audio.volume=0;
     
-    window.addEventListener('onblur',() => {
-      audio.pause();
+    window.addEventListener('blur',() => {
       setPlaying(false);
     });
+    
+    window.addEventListener('focus',() => {
+      setPlaying(true);
+    });
+    
+    setPlaying(true);
 
   }, []);
 
   return (
     <div>
-        <button aria-label='play pause button' style={{'position' : 'relative','width': '2rem', 'height': '2rem', 'background': 'transparent', 'border': 'none', 'fill':'#F8F8F70' }} onClick={toggle}>{playing ? iconPause : iconPlay}</button>
+        <button aria-label='play pause button' className={styles.buttonPlay} onClick={toggle}>{playing ? iconPause : iconPlay}</button>
     </div>
   )
 };
