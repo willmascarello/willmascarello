@@ -104,7 +104,7 @@ const useAudio = url => {
       return check;
     };
 
-    window.mobileCheck() ? setPlaying(true) : setPlaying(false);
+    window.mobileCheck() ? setPlaying(false) : setPlaying(true);
 
   }, []);
 
