@@ -40,7 +40,7 @@ const iconPlay = <div className={styles.bars}>
 const useAudio = url => {
   // let sound = new Audio(url);
   const [audio] = useState(typeof Audio !== "undefined" && new Audio(url));
-  const [playing, setPlaying] = useState(true);
+  const [playing, setPlaying] = useState(false);
 
   let vol = 0.1;
   const interval = 60;
@@ -104,7 +104,7 @@ const useAudio = url => {
       return check;
     };
 
-    window.mobileCheck() || setPlaying(true);
+    window.mobileCheck() ? setPlaying(false) : setPlaying(true);
 
   }, []);
 
