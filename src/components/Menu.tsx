@@ -46,7 +46,8 @@ export function Menu() {
             </div>
 
             {/* <Music url={[ 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' ]} /> */}
-            <Music url={[ 'https://mp3l.jamendo.com/?trackid=323336&format=mp31&from=CvJaWadeL5tGEjiE827x3w%3D%3D%7CnowNj4Uoqv76AjjZ8qWT7Q%3D%3D' ]} />
+            {/* <Music url={[ 'https://mp3l.jamendo.com/?trackid=323336&format=mp31&from=CvJaWadeL5tGEjiE827x3w%3D%3D%7CnowNj4Uoqv76AjjZ8qWT7Q%3D%3D' ]} /> */}
+            <Music url={[ './music/melodia_v1.mp3' ]} />
 
             {/* <div className={styles.menu__page}>
                 <a href="" target="blank"><img className={styles.sou} src="logo.png" alt="em breve" /></a>
