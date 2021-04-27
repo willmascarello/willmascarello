@@ -40,7 +40,7 @@ const iconPlay = <div className={styles.bars}>
 const useAudio = url => {
   // let sound = new Audio(url);
   const [audio] = useState(typeof Audio !== "undefined" && new Audio(url));
-  const [playing, setPlaying] = useState(false);
+  const [playing, setPlaying] = useState(true);
 
   let vol = 0.1;
   const interval = 60;
@@ -50,7 +50,7 @@ const useAudio = url => {
   }
 
   useEffect(() => {
-
+    
     if (playing) {
 
       audio.play();
