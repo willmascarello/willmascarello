@@ -29,8 +29,8 @@ export default function Home(props) {
       axios.post('/api/visitor', {visitor: navigator.language})
     }
   
-    if (!localStorage.getItem('isNewSession')) {
-      localStorage.setItem('isNewSession', 'true');
+    if (!sessionStorage.getItem('isNewSession')) {
+      sessionStorage.setItem('isNewSession', 'true');
       handleVisitor();
     }
 
