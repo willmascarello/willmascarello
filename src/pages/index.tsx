@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Head from 'next/head'
 import { GetServerSideProps } from 'next'
 
@@ -7,6 +7,7 @@ import { HomePage } from "../components/Home";
 import { NameGeralProvider } from "../context/NameGeralContext";
 
 import { NameProvider } from "../context/NameContext";
+import axios from "axios";
 // This is the main and start page of the App
 
 interface HomeProps {
@@ -21,6 +22,21 @@ export default function Home(props) {
   let description = 'Olá, sou o William Mascarello. Um desenvolvedor criativo, criando conteúdos e experiências digitais! Conheça um pouco sobre mim :)';
   let img = "https://willmascarello.com/og_image_min.jpg";
 
+  
+  useEffect(() => {
+
+    function handleVisitor() {
+      axios.post('/api/visitor', {visitor: navigator.language})
+    }
+  
+    if (!localStorage.getItem('isNewSession')) {
+      localStorage.setItem('isNewSession', 'true');
+      handleVisitor();
+    }
+
+  }, []);
+
+  
   return (
     
     <NameGeralProvider 
