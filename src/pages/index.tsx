@@ -20,7 +20,7 @@ export default function Home(props) {
 
   let title = 'Will Mascarello | Creative Developer';
   let description = 'Olá, sou o William Mascarello. Um desenvolvedor criativo, criando conteúdos e experiências digitais! Conheça um pouco sobre mim :)';
-  let img = "https://willmascarello.com/og_image_min.jpg";
+  let img = "https://willmascarello.com/og_image.jpg";
 
   
   useEffect(() => {
