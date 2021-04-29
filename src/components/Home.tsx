@@ -18,7 +18,7 @@ export function HomePage() {
                 <h2>Olá,</h2>
                 <h1>Sou o William Mascarello</h1>
             </div>
-            <h2 className={styles.subtitle}>Bem vindo ao <br/>Meu Universo <br/>em constante evolução</h2>
+            <h2 className={styles.subtitle}>Bem-vindo ao <br/>Meu Universo <br/>em constante evolução</h2>
         </div>
     )
 }
