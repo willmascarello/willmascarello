@@ -97,17 +97,17 @@ const useAudio = url => {
 
   useEffect(() => {
 
-    // // ativar navamente quando tiver mais conteúdo no site
-    // audio.addEventListener('ended', () => audio.play());
-    // audio.volume=0;
+    audio.addEventListener('ended', () => audio.play());
+    audio.volume=0;
     
+    // // ativar navamente quando tiver mais conteúdo no site
     // window.addEventListener('blur',() => {
     //   setPlaying(false);
     // });
     
-    window.addEventListener('focus',() => {
-      setPlaying(true);
-    });
+    // window.addEventListener('focus',() => {
+    //   setPlaying(true);
+    // });
     
     window.mobileCheck = function() {
       let check = false;
