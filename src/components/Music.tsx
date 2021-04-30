@@ -97,12 +97,13 @@ const useAudio = url => {
 
   useEffect(() => {
 
-    audio.addEventListener('ended', () => audio.play());
-    audio.volume=0;
+    // // ativar navamente quando tiver mais conteúdo no site
+    // audio.addEventListener('ended', () => audio.play());
+    // audio.volume=0;
     
-    window.addEventListener('blur',() => {
-      setPlaying(false);
-    });
+    // window.addEventListener('blur',() => {
+    //   setPlaying(false);
+    // });
     
     window.addEventListener('focus',() => {
       setPlaying(true);
