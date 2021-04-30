@@ -37,8 +37,9 @@ const iconPlay = <div className={styles.bars}>
                       </div>
                   </div>;
 
+
 const useAudio = url => {
-  // let sound = new Audio(url);
+  
   const [audio] = useState(typeof Audio !== "undefined" && new Audio(url));
   const [playing, setPlaying] = useState(true);
 
@@ -53,7 +54,16 @@ const useAudio = url => {
     
     if (playing) {
 
-      audio.play();
+      const play = audio.play();
+
+      if (play !== undefined) {
+        play.then(_ => {
+          audio.play()
+        }).catch(error => {
+          setPlaying(false)
+        });
+      }
+
       let fadein = setInterval(
         function() {
           if (vol < 1) {
