@@ -7,8 +7,8 @@
 [![CodePen Badge](https://img.shields.io/badge/CodePen-Profile-informational?style=flat&logo=codepen&logoColor=white&color=black)](https://codepen.io/willmascarello)
 
 
-Olá, sou o William Mascarello. 👋
-Um desenvolvedor criativo, criando conteúdos e experiências digitais! 
+Olá, sou o William Mascarello. 👋 <br>
+Um desenvolvedor criativo, criando conteúdos e experiências digitais! <br>
 Conheça um pouco sobre mim :) [Confira portfolio.](https://willmascarello.com/)
 
 
