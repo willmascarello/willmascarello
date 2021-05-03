@@ -26,8 +26,6 @@ Conheça um pouco sobre mim :) [Confira portfolio.](https://willmascarello.com/)
   <img align="center" style="margin:1rem 0.5rem" src="https://github-readme-stats.vercel.app/api/pin/?username=willmascarello&repo=moveit-next&title_color=ffffff&text_color=c9cacc&icon_color=4AB197&bg_color=1A2B34" />
 </a>
 
-<br>
-
 <a href="https://github.com/willmascarello/base-next-js">
   <img align="center" style="margin:0.5rem" src="https://github-readme-stats.vercel.app/api/pin/?username=willmascarello&repo=base-next-js&title_color=ffffff&text_color=c9cacc&icon_color=4AB197&bg_color=1A2B34" />
 </a>
