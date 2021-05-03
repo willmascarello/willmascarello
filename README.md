@@ -1,4 +1,4 @@
-[![Mascarello's GitHub Banner](https://willmascarello.com/og_image.jpg)](https://willmascarello.com)
+[![Mascarello's GitHub Banner](https://willmascarello.com/banner_github.jpg)](https://willmascarello.com)
 
 
 <!-- [![Visits Badge](https://badges.pufler.dev/visits/willmascarello/willmascarello)](https:willmascarello.dev) -->
@@ -87,5 +87,4 @@ Conheça um pouco sobre mim :) [Confira portfolio.](https://willmascarello.com/)
 
 
 > This readme was based on [@braydoncoyer](https://github.com/braydoncoyer)'s tutorial on [how to create a nice-looking readme](https://blog.braydoncoyer.dev/creating-a-killer-github-profile-readme-part-1)
-<br>
-> Thank you [@rafasilveira](https://github.com/rafasilveira) for introducing me to this
+> <br>Thank you [@rafasilveira](https://github.com/rafasilveira) for introducing me to this
