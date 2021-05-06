@@ -1,6 +1,7 @@
 .menu {
   color: var(--secundary);
   position: absolute;
+  top: 1rem;
   right: 2rem;
   display: flex;
   flex-direction: column;
@@ -74,6 +75,23 @@
 .menu__icon svg {
   width: 2.5rem;
   height: auto;
+}
+
+.menu__page {
+  display: flex;
+  flex-direction: column;    
+  text-align: center;
+}
+
+.menu__page a {
+  font-size: 1.3rem;
+  font-weight: 900;
+  opacity: 50%;
+  transition: all .3s ease-in-out;
+}
+
+.menu__page a:hover {
+  opacity: 100%;
 }
 
 .player {

@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import Link from "next/link";
 import { NameContext } from "../context/NameContext";
 import Music  from "./Music";
 
@@ -10,7 +11,10 @@ export function Menu() {
 
     return (
         <div className={styles.menu}>
-            <a href="#" ><img width="64px" height="55px" className={styles.logo} src="logo.svg" alt="Will Mascarello Logo" /></a>
+
+            <Link href="/" >
+                <a><img width="64px" height="55px" className={styles.logo} src="logo.svg" alt="Will Mascarello Logo" /></a>
+            </Link>
 
 
             {/* <a href="" target="blank" className={styles.blog}><IconBlog /></a> // precisa instalar o webpack SVGR */}
@@ -45,18 +49,18 @@ export function Menu() {
                 </a>
             </div>
 
-            {/* <Music url={[ 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' ]} /> */}
-            {/* <Music url={[ 'https://mp3l.jamendo.com/?trackid=323336&format=mp31&from=CvJaWadeL5tGEjiE827x3w%3D%3D%7CnowNj4Uoqv76AjjZ8qWT7Q%3D%3D' ]} /> */}
+            <div className={styles.menu__page}>    
+                <Link  href="/resume">
+                    <a>Sou</a>
+                </Link>
+                {/* Ativar o Mu quando a página Meu Universo estiver pronta */}
+                {/* <Link href="/mu" >
+                    <a>Mu</a>
+                </Link> */}
+            </div>
+
             <Music url={[ './music/melodia_v1.mp3' ]} />
 
-            {/* <div className={styles.menu__page}>
-                <a href="" target="blank"><img className={styles.sou} src="logo.png" alt="em breve" /></a>
-                <a href="" target="blank"><img className={styles.mu} src="logo.png" alt="em breve" /></a>
-            </div>
-            <div className={styles.menu__control}>
-                <a href="" target="blank"><img className={styles.music} src="logo.png" alt="em breve" /></a>
-                <a href="" target="blank"><img className={styles.language} src="logo.png" alt="em breve" /></a>
-            </div> */}
         </div>
     )
 }

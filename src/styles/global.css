@@ -9,6 +9,7 @@
     --accent: #FFF500;
     --accent-50: #FFF50050;
     --white: #fff;
+    --gradient-primary: linear-gradient(250deg, #000010 0%, #000040 100%);
   }
 
   @font-face {
@@ -50,7 +51,7 @@
 /* Styles important in all pages */
 
 body {
-    background:  var(--primary);
+    background:  var(--gradient-primary);
     color: var(--secundary);
 }
 
