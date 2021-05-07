@@ -1,7 +1,9 @@
-
 import { Menu } from "../components/Menu";
+import { MongoClient, Db } from 'mongodb';
+
 
 function Resume({resume}){
+  resume = JSON.parse(resume);
   return (
     <>
       {resume.pt}
@@ -12,13 +14,8 @@ function Resume({resume}){
 
 
 export async function getStaticProps() {
-  // let resume = null;
-  // const router = useRouter();
-   
-  // console.log({ basePath: router.basePath}); 
-  
-  const res = await fetch('http://localhost:3000/api/resume');
-  const resume = await res.json();
+  const getResume = await getResumeDB();
+  const resume = JSON.stringify(getResume);
   console.log(resume);
 
 
@@ -26,3 +23,41 @@ export async function getStaticProps() {
 }
 
 export default Resume;
+
+
+
+/* --------------------------------------------------- */
+let cachedDb: Db = null;
+
+async function connectToDatabase(uri: string) {
+  if (cachedDb) {
+    return cachedDb;
+  }
+
+  const client = await MongoClient.connect(uri, {
+    useNewUrlParse: true,
+    useUnifieldTopology: true,
+  })
+
+  const { URL } = require('url');
+  const dbUrl = new URL(uri);
+  const dbName = dbUrl.pathname.substr(1);
+
+  const db = client.db(dbName);
+  
+  cachedDb = db;
+
+  return db;
+}
+
+const getResumeDB = async () => {
+
+  const db = await connectToDatabase(process.env.MONGODB_URI);
+
+  const collection = db.collection('im_resume');
+
+  const resume = await collection.findOne()
+  
+  return resume;
+}
+/* --------------------------------------------------- */
