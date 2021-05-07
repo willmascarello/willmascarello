@@ -1,11 +1,12 @@
 
 import { Menu } from "../components/Menu";
 
-function Skills({resume}){
+function Skills({skills}){
+  
+  skills = JSON.parse(skills);
   return (
     <>
-      {resume.pt}
-      
+      {skills.skills}
       <Menu />
     </>
   );
@@ -13,17 +14,10 @@ function Skills({resume}){
 
 
 export async function getStaticProps() {
-  // let resume = null;
-  // const router = useRouter();
-   
-  // console.log({ basePath: router.basePath}); 
-  
-  const res = await fetch('http://localhost:3000/api/resume');
-  const resume = await res.json();
-  console.log(resume);
 
+  const skills = JSON.stringify({skills: 'Programador, UX/UI Designer, Fotografo, Game Designer, Aventureiro'});
 
-  return ({props: {resume,},});
+  return ({props: {skills,},});
 }
 
 export default Skills;
