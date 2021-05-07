@@ -1,16 +1,9 @@
-import { useContext } from "react";
-import { NameContext } from "../context/NameContext";
-// import VideoBackground from "video/Mountains.mp4"
-
 import styles from "../styles/pages/Home.module.css"
 
 export function HomePage() {
-    const {isActive, functionActive} = useContext(NameContext); 
 
     return (
         <div className={styles.container}>
-            {/* https://www.youtube.com/watch?v=PYFltdGJ-Rc 
-            https://www.youtube.com/watch?v=I2UBjN5ER4s*/}
             <video autoPlay loop muted className={styles.videoBackground}>
                 <source src="video/Mountains.mp4" type="video/mp4" />
             </video>

@@ -1,13 +1,10 @@
-import { useContext } from "react";
 import Link from "next/link";
-import { NameContext } from "../context/NameContext";
 import Music  from "./Music";
 
 import styles from "../styles/components/Menu.module.css"
 // import {ReactComponent as IconBlog} from "./icons/blog.svg"
 
 export function Menu() {
-    const {isActive, functionActive} = useContext(NameContext); 
 
     return (
         <div className={styles.menu}>

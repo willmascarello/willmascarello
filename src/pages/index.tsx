@@ -3,18 +3,10 @@ import Head from 'next/head'
 
 import { Menu } from "../components/Menu";
 import { HomePage } from "../components/Home";
-import { NameGeralProvider } from "../context/NameGeralContext";
-
-import { NameProvider } from "../context/NameContext";
 import axios from "axios";
 
-interface HomeProps {
-  variable: number;
-  isActive: boolean;
-  consoleAlert: () => {};
-}
 
-export default function Home(props) {
+export default function Home() {
 
   let title = 'Will Mascarello | Creative Developer';
   let description = 'Olá, sou o William Mascarello. Um desenvolvedor criativo, criando conteúdos e experiências digitais! Conheça um pouco sobre mim :)';
@@ -37,11 +29,7 @@ export default function Home(props) {
   
   return (
     
-    <NameGeralProvider 
-    variable={props.variable}
-    isActive={props.isActive}
-    >
-
+    <>
       <div>
         
         <Head>
@@ -70,16 +58,13 @@ export default function Home(props) {
           <meta property="fb:app_id" content="768199120565235" />
 
         </Head>
-        
-        <NameProvider>
           <Menu />
           <HomePage />
-        </NameProvider>
 
 
       </div>
 
-    </NameGeralProvider>
+    </>
   )
 }
 
