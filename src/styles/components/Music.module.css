@@ -78,33 +78,33 @@
 
 
 .dot__1r {
-  animation: dotAnimate .5s ease-in infinite alternate;
-  animation-delay: .2s;
+  animation: dotAnimate .7s ease-in infinite alternate;
+  animation-delay: .1s;
   left: 0;
 }
 .dot__2r {
-  animation: dotAnimate .8s ease-in infinite alternate;
+  animation: dotAnimate .6s ease-in infinite alternate;
   animation-delay: .2s;
   left: .3rem;
 }
 .dot__3r {
-  animation: dotAnimate .6s ease-in infinite alternate;
-  animation-delay: .2s;
+  animation: dotAnimate .8s ease-in infinite alternate;
+  animation-delay: .3s;
   left: .6rem;
 }
 .dot__4r {
-  animation: dotAnimate .5s ease-in infinite alternate;
-  animation-delay: .2s;
+  animation: dotAnimate .7s ease-in infinite alternate;
+  animation-delay: .4s;
   left: .9rem;
 }
 .dot__5r {
   animation: dotAnimate .6s ease-in infinite alternate;
-  animation-delay: .2s;
+  animation-delay: .5s;
   left: 1.2rem;
 }
 .dot__6r {
-  animation: dotAnimate .5s ease-in infinite alternate;
-  animation-delay: .2s;
+  animation: dotAnimate .7s ease-in infinite alternate;
+  animation-delay: .6s;
   left: 1.5rem;
 }
 
