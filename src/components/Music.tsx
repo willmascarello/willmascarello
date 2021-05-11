@@ -50,26 +50,29 @@ const useAudio = url => {
     if (playing) {
 
       // #FIX não iniciar a musica novamente quando se troca de página
-      const play = audio.play();
-
-      if (play !== undefined) {
-        play.then(_ => {
-          audio.play()
-        }).catch(error => {
-          setPlaying(false)
-        });
+      console.log('audio: ' + audio.paused);
+      if(audio.paused){
+        const play = audio.play();
+  
+        if (play !== undefined) {
+          play.then(_ => {
+            audio.play()
+          }).catch(error => {
+            setPlaying(false)
+          });
+        }
+  
+        let fadein = setInterval(
+          function() {
+            if (vol < 1) {
+              audio.volume=vol;
+              vol += 0.1;
+            }
+            else {
+              clearInterval(fadein);
+            }
+          }, interval);
       }
-
-      let fadein = setInterval(
-        function() {
-          if (vol < 1) {
-            audio.volume=vol;
-            vol += 0.1;
-          }
-          else {
-            clearInterval(fadein);
-          }
-        }, interval);
       
     } else {
 
@@ -105,7 +108,7 @@ const useAudio = url => {
     //   setPlaying(true);
     // });
   
-    console.log('render: ' + playing);
+    // console.log('render: ' + playing);
 
   }, []);
 

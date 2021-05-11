@@ -2,6 +2,7 @@ import Link from "next/link";
 import Music  from "./Music";
 
 import styles from "../styles/components/Menu.module.css"
+import ActiveLink from "./ActiveLink";
 // import {ReactComponent as IconBlog} from "./icons/blog.svg"
 
 export function Menu() {
@@ -46,14 +47,14 @@ export function Menu() {
                 </a>
             </div>
 
-            <div className={styles.menu__page}>    
-                <Link  href="/resume">
-                    <a>Sou</a>
-                </Link>
+            <div className={styles.menu__page}>
+                <ActiveLink href="/resume" activeStyle={styles.menu__page__active}>
+                    <a className={styles.menu__page__link}>Sou</a>
+                </ActiveLink>
                 {/* Ativar o Mu quando a página Meu Universo estiver pronta */}
-                {/* <Link href="/mu" >
-                    <a>Mu</a>
-                </Link> */}
+                {/* <ActiveLink href="/myuniverse" activeStyle={styles.menu__page__active}>
+                    <a className={styles.menu__page__link}>Mu</a>
+                </ActiveLink> */}
             </div>
 
             <Music url={[ './music/melodia_v1.mp3' ]} />

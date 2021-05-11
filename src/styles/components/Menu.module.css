@@ -83,15 +83,20 @@
   text-align: center;
 }
 
-.menu__page a {
+.menu__page__link {
   font-size: 1.3rem;
   font-weight: 900;
   opacity: 50%;
   transition: all .3s ease-in-out;
 }
 
-.menu__page a:hover {
+.menu__page__link:hover {
   opacity: 100%;
+}
+
+.menu__page__active {
+  opacity: 100%;
+  color: var(--secundary);
 }
 
 .player {

@@ -1,4 +1,3 @@
-import { Menu } from "../components/Menu";
 import { MongoClient, Db } from 'mongodb';
 
 
@@ -7,7 +6,6 @@ function Resume({resume}){
   return (
     <>
       {resume.pt}
-      <Menu />
     </>
   );
 }
@@ -16,8 +14,6 @@ function Resume({resume}){
 export async function getStaticProps() {
   const getResume = await getResumeDB();
   const resume = JSON.stringify(getResume);
-  console.log(resume);
-
 
   return ({props: {resume,},});
 }

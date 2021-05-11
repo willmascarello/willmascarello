@@ -1,7 +1,6 @@
 import React, {useEffect} from "react";
 import Head from 'next/head'
 
-import { Menu } from "../components/Menu";
 import { HomePage } from "../components/Home";
 import axios from "axios";
 
@@ -58,7 +57,6 @@ export default function Home() {
           <meta property="fb:app_id" content="768199120565235" />
 
         </Head>
-          <Menu />
           <HomePage />
 
 
