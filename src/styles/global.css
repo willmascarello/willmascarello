@@ -53,6 +53,7 @@
 body {
     background:  var(--gradient-primary);
     color: var(--secundary);
+    margin: 0;
 }
 
 body, input, textarea, button {
