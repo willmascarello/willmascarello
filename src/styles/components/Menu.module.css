@@ -17,7 +17,15 @@
   }
 }
 
-.logo {
+/* .logo {
+  width: 4rem;
+  height: auto;
+  margin-bottom: 2rem;
+  opacity: 70%;
+  transition: all .3s ease-in-out;
+} */
+
+.logo svg {
   width: 4rem;
   height: auto;
   margin-bottom: 2rem;
@@ -29,7 +37,7 @@
   color: transparent;
 }
 
-.logo:hover {
+.logo svg:hover {
   opacity: 100%;
   transform: rotate(180deg);
 } 
